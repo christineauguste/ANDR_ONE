@@ -56,7 +56,7 @@ public class SocialActivity extends AppCompatActivity
 
         webview = (WebView) findViewById(R.id.webview1);
 
-      
+
 
         webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setBuiltInZoomControls(false);

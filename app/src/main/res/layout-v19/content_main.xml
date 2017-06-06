@@ -11,9 +11,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@color/colorAccent"
         android:id="@+id/imageBack"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@color/colorAccent" />
 
 
     <LinearLayout
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/castio"
+                android:text="@string/app_name"
                 android:id="@+id/radiotextField"
                 android:textAlignment="center"
                 android:layout_above="@+id/playBtn"
@@ -82,46 +82,38 @@
             android:layout_marginBottom="16dp">
 
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="100dp"
                 android:layout_weight="1">
 
                 <Button
-                    android:layout_width="56dp"
                     android:id="@+id/chatBtn"
-                    android:layout_alignWithParentIfMissing="false"
-                    android:layout_alignParentTop="false"
-                    android:layout_centerInParent="false"
-                    android:background="@drawable/more_s"
-                    android:textColor="#ffffff"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:onClick="chat_Click" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal|center_vertical"
-                android:layout_weight="1">
-
-                <Button
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:id="@+id/playBtn"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_s"
+                    android:onClick="chat_Click"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/playBtn"
+                    android:layout_alignLeft="@+id/playBtn"
+                    android:layout_alignStart="@+id/playBtn" />
 
-                    android:layout_centerHorizontal="true"
+                <Button
+                    android:id="@+id/playBtn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+
                     android:layout_gravity="bottom"
+                    android:layout_weight="1"
                     android:background="@drawable/play_button_a"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
+                    android:textColor="#ffffff"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
 
 
         </LinearLayout>
