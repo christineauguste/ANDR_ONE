@@ -107,6 +107,8 @@ public class RadioActivity extends AppCompatActivity implements RadioListener,Co
         }
         mRadioManager.enableNotification(false);
 
+
+
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_banner_id));
 
@@ -343,6 +345,7 @@ public class RadioActivity extends AppCompatActivity implements RadioListener,Co
     public void onResume() {
         super.onResume();
         mRadioManager.registerListener(this);
+
     }
 
     @Override
