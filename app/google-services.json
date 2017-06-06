@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "58481965609",
+    "firebase_url": "https://radioelectro-e909e.firebaseio.com",
+    "project_id": "radioelectro-e909e",
+    "storage_bucket": "radioelectro-e909e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58481965609:android:b1903e75be939c29",
+        "android_client_info": {
+          "package_name": "info.appteve.radioelectro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58481965609-mlen2mnjiiajbdbvgoqgr0mi270oab5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLS1xXNgYbCArHDDkx_ak-NX7ErxEzeCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
