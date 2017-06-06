@@ -34,21 +34,12 @@ public class ImageCoverHelper {
                 try {
                     if (jsonObject != null  ) {
 
-                        System.out.println("Image  OUT = = = = = = = = = = = = = =  "+jsonObject);
-
                         int counting = jsonObject.getInt("resultCount");
-                        System.out.println("Image  = = = = = = = = = = = = = =  "+ counting);
-
-
 
                         JSONArray resp = jsonObject.getJSONArray("results");
                         JSONObject obj = resp.getJSONObject(0);
                         String urlImage = obj.getString("artworkUrl100");
                         urlImage = urlImage.replace("100x100bb","300x300bb");
-
-                        System.out.println("Image  = = = = = = = = = = = = = =  "+ urlImage);
-
-
 
                         return urlImage;
                     } else {

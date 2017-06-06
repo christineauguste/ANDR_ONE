@@ -20,12 +20,6 @@ public class AppController extends Application {
 
     SharedPreferences prefs = null;
 
-
-
-
-
-
-
     @Override
     protected void attachBaseContext(Context context) {
         super.attachBaseContext(context);
