@@ -84,10 +84,6 @@ public class PlayerCastActivity extends AppCompatActivity implements Constants {
         RadioActivity radio = new RadioActivity();
         radio.stopPlaying();
 
-
-
-
-
         position = getIntent().getExtras().getInt("position");
 
         getPodcastList();

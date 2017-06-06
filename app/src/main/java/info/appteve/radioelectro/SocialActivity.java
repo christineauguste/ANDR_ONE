@@ -56,10 +56,7 @@ public class SocialActivity extends AppCompatActivity
 
         webview = (WebView) findViewById(R.id.webview1);
 
-       // coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
-
-      //  mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
-      //  mSwipeRefreshLayout.setColorSchemeResources(R.color.blue, R.color.colorMains, R.color.blue);
+      
 
         webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setBuiltInZoomControls(false);

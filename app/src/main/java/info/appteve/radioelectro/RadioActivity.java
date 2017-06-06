@@ -121,7 +121,6 @@ public class RadioActivity extends AppCompatActivity implements RadioListener,Co
 
         if (isOnline()){
 
-            System.out.println("INTERNET");
             requestNewInterstitial();
             initializeUI();
             updateCoverImages("");
@@ -129,7 +128,6 @@ public class RadioActivity extends AppCompatActivity implements RadioListener,Co
             isInternet = true;
         } else {
 
-            System.out.println("NO INTERNET");
             isInternet = false;
         }
 

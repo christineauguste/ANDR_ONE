@@ -57,7 +57,6 @@ public class NewsActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-       // createListNews();
         getNewsList();
 
 
@@ -81,7 +80,6 @@ public class NewsActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-       // getMenuInflater().inflate(R.menu.news, menu);
         return true;
     }
 
@@ -107,25 +105,18 @@ public class NewsActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
 
-
-
             Intent searchIntent = new Intent(NewsActivity.this, RadioActivity.class);
             startActivity(searchIntent);
-
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
 
 
-
         }   else if (id == R.id.nav_manage) {
-
-
 
             Intent searchIntent = new Intent(NewsActivity.this, NewsActivity.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
 
         } else if (id == R.id.nav_share) {
-
 
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MENU_SITE_URL));
