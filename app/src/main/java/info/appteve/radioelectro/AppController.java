@@ -49,7 +49,7 @@ public class AppController extends Application {
         prefs = getSharedPreferences("info.com.castio", MODE_PRIVATE);
 
         if (prefs.getBoolean("firstrun", true)) {
-            prefs.edit().putBoolean("firstrun", false).commit();
+            prefs.edit().putBoolean("firstrun", false).commit(); //prefs
 
         }
 
